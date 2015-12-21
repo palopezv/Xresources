@@ -2,7 +2,7 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-Xft.dpi:                    96
+Xft.dpi:                    101
 Xft.antialias:              false
 Xft.rgba:                   rgb
 Xft.hinting:                true
@@ -29,8 +29,12 @@ URxvt.lineSpace:            0
 ! Fonts
 URxvt.allow_bold:           false
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-URxvt*font: xft:Monospace:pixelsize=14
-URxvt*boldFont: xft:Monospace:pixelsize=14
+! URxvt*font: xft:Monospace:pixelsize=14
+! URxvt*boldFont: xft:Monospace:pixelsize=14
+URxvt*font: xft:DejaVu Sans Mono:style=Book:size=10:antialias=false:autohint=false 
+URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=10:antialias=false:autohint=false
+URxvt*boldFont: xft:DejaVu Sans Mono:style=Bold:size=10:antialias=false:autohint=false
+URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:size=10:antialias=false:autohint=false
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -42,7 +46,7 @@ URxvt.scrollBar:            false
 ! Perl extensions
 URxvt.perl-ext-common:      default,matcher
 URxvt.matcher.button:       1
-URxvt.urlLauncher:          firefox
+URxvt.urlLauncher:          chromium
 
 ! Cursor
 URxvt.cursorBlink:          true
