@@ -6,19 +6,22 @@ Xft.antialias:              true
 Xft.rgba:                   none
 Xft.hinting:                true
 Xft.hintstyle:              hintsmedium
+Xft.autohint:               false
+Xft.lcdfilter:              lcddefault
 !-----------------------------------------------------------------------
 ! URxvt settings
 ! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
 ! More info at:
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-----------------------------------------------------------------------
+!
 !-----------------------------------------------------------------------
 ! General settings
 !-----------------------------------------------------------------------
 URxvt.depth:                32
-URxvt.geometry:             90x30
+URxvt.geometry:             108x35
 URxvt.transparent:          false
-URxvt.fading:               0
+URxvt.fading:               40
 URxvt.urgentOnBell:         false /* default: true */
 URxvt.visualBell:           false /* default: true */
 URxvt.loginShell:           true
@@ -49,10 +52,10 @@ URxvt.allow_bold:           true
 ! blissfully ignorant in those matters. In the words of Brinkhusrt,
 ! they "steal sheep".
 !
-URxvt*font:           xft:monospace:style=Book:pixelsize=14
-URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=14
-URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=14
-URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=14
+URxvt*font:           xft:monospace:style=Book:pixelsize=15
+URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=15
+URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=15
+URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=15
 !-----------------------------------------------------------------------
 !! Fix font space
 !-----------------------------------------------------------------------
@@ -97,10 +100,14 @@ URxvt.pointerBlank:         true
 *cursorColor:               14
 *pointerColorBackground:    10
 *pointerColorForeground:    14
+! URxvt*colorBD:                        color
+! URxvt*colorIT:                        color
+! URxvt*colorUL:                        color
+! URxvt*colorRV:                        color
 !-----------------------------------------------------------------------
 ! black dark/light
 !-----------------------------------------------------------------------
-*color0:                    #073642
+*color0:                    #073642 /* black dark */
 *color8:                    #002b36
 !-----------------------------------------------------------------------
 ! red dark/light
