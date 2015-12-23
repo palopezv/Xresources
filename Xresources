@@ -82,7 +82,7 @@ URxvt.keysym.M-s:           perl:keyboard-select:search
 !! Cursor
 !-----------------------------------------------------------------------
 URxvt.cursorBlink:          true
-URxvt.cursorColor:          11
+URxvt.cursorColor:          color11
 URxvt.cursorUnderline:      false
 !-----------------------------------------------------------------------
 !! Pointer
@@ -93,13 +93,13 @@ URxvt.pointerBlank:         true
 !
 ! Source http://github.com/altercation/solarized
 !-----------------------------------------------------------------------
-*background:                8
-*foreground:                11
+*background:                color8
+*foreground:                color11
 !*fading:                    40
-*fadeColor:                 8
-*cursorColor:               14
-*pointerColorBackground:    10
-*pointerColorForeground:    14
+*fadeColor:                 color8
+*cursorColor:               color14
+*pointerColorBackground:    color10
+*pointerColorForeground:    color14
 ! URxvt*colorBD:                        color
 ! URxvt*colorIT:                        color
 ! URxvt*colorUL:                        color
