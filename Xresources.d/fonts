@@ -1,0 +1,10 @@
+!-----------------------------------------------------------------------
+! Xft settings
+!-----------------------------------------------------------------------
+Xft.dpi:                    101        /* Could be 96 but my lcd is weird */
+Xft.antialias:              true
+Xft.rgba:                   none
+Xft.hinting:                true
+Xft.hintstyle:              hintsmedium
+Xft.autohint:               false
+Xft.lcdfilter:              lcddefault

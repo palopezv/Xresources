@@ -1,0 +1,85 @@
+!-----------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-----------------------------------------------------------------------
+!
+!-----------------------------------------------------------------------
+! General settings
+!-----------------------------------------------------------------------
+URxvt.depth:                32
+URxvt.geometry:             108x35
+URxvt.transparent:          false
+URxvt.fading:               40
+URxvt.urgentOnBell:         false /* default: true */
+URxvt.visualBell:           false /* default: true */
+URxvt.loginShell:           true
+URxvt.saveLines:            50
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+!-----------------------------------------------------------------------
+!-----------------------------------------------------------------------
+! Fonts
+!-----------------------------------------------------------------------
+URxvt.allow_bold:           true 
+!
+! Terminus 12pt is an OK bitmap font if your vision is 30/20 and your
+! monitor is *not* hi-dpi...
+!
+!URxvt.font:           -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
+!
+! In most installations DejaVu is the default monospace font, but you 
+! never know...
+!
+! If the monospace font is DèjaVu, the styles are Book, Oblique,
+! Bold and BoldOblique. If the monospace font is *not* DèjaVu, 
+! then you need to use 'fc-match monospace' first to find the actual 
+! font in use and second 'fc-list' to find out the style names that 
+! correspond to regular, bold and so on. A monospace font if named
+! honestly has Oblique styles, not Italic. But most font designers
+! lie through their teeth, particularly those of free fonts, who are
+! blissfully ignorant in those matters. In the words of Brinkhusrt,
+! they "steal sheep".
+!
+URxvt*font:           xft:monospace:style=Book:pixelsize=15
+URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=15
+URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=15
+URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=15
+
+!-----------------------------------------------------------------------
+!! Fix font space
+!-----------------------------------------------------------------------
+URxvt*letterSpace:           -1 /* Is it really needed? */
+
+!-----------------------------------------------------------------------
+!! Scrollbar
+!-----------------------------------------------------------------------
+URxvt.scrollStyle:           rxvt
+URxvt.scrollBar:             false
+
+!-----------------------------------------------------------------------
+!! Perl extensions
+!-----------------------------------------------------------------------
+! URxvt.perl-ext-common:       default,matcher
+! URxvt.matcher.button:        1
+! URxvt.urlLauncher:           chromium
+!-----------------------------------------------------------------------
+URxvt.perl-ext-common:       default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:   chromium
+URxvt.url-select.underline:  true
+URxvt.keysym.M-u:            perl:url-select:select_next
+URxvt.keysym.M-Escape:       perl:keyboard-select:activate
+URxvt.keysym.M-s:            perl:keyboard-select:search
+
+!-----------------------------------------------------------------------
+!! Cursor
+!-----------------------------------------------------------------------
+URxvt.cursorBlink:           true
+!URxvt.cursorColor:           #657b83 /* color11 solarized set */
+URxvt.cursorUnderline:       false
+
+!-----------------------------------------------------------------------
+!! Pointer
+!-----------------------------------------------------------------------
+URxvt.pointerBlank:          true
