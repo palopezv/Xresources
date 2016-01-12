@@ -1,0 +1,52 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! URxvt
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Fonts
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+URxvt*font: xft:DejaVu Sans Mono:style=Book:size=10:antialias=false:autohint=false 
+URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=10:antialias=false:autohint=false
+URxvt*boldFont: xft:DejaVu Sans Mono:style=Bold:size=10:antialias=false:autohint=false
+URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:size=10:antialias=false:autohint=false
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! scrollbar
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+URxvt*scrollBar: false
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Color
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! URxvt*tintColor:                      color
+! URxvt*fadeColor:                      color
+URxvt*background:                     8
+URxvt*foreground:                     12
+URxvt*color0:                         #073642
+URxvt*color1:                         #dc322f
+URxvt*color2:                         #859900
+URxvt*color3:                         #b58900
+URxvt*color4:                         #268bd2
+URxvt*color5:                         #d33682
+URxvt*color6:                         #2aa198
+URxvt*color7:                         #eee8d5
+URxvt*color8:                         #002b36
+URxvt*color9:                         #cb4b16
+URxvt*color10:                        #586e75
+URxvt*color11:                        #657b83
+URxvt*color12:                        #839496
+URxvt*color13:                        #6c71c4
+URxvt*color14:                        #93a1a1
+URxvt*color15:                        #fdf6e3
+! URxvt*colorBD:                        color
+URxvt*colorIT:                        11
+URxvt*colorUL:                        7
+! URxvt*colorRV:                        color
+! URxvt*underlineColor:                 color
+! URxvt*scrollColor:                    color
+! URxvt*troughColor:                    color
+! URxvt*highlightColor:                 color
+! URxvt*highlightTextColor:             color
+URxvt*cursorColor:                    14
+! URxvt*cursorColor2:                   color
+! URxvt*pointerColor:                   color
+! URxvt*pointerColor2:                  color
+! URxvt*borderColor:                    color
