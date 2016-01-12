@@ -1,39 +1,33 @@
 !-----------------------------------------------------------------------
 ! Xft settings
 !-----------------------------------------------------------------------
-Xft.dpi:                    110        /* Could be 96 but my lcd is weird */
-Xft.antialias:              1
-Xft.rgba:                   none
-Xft.hinting:                1
-Xft.hintstyle:              hintsmedium
-Xft.autohint:               0
-Xft.lcdfilter:              lcdnone
+Xft.dpi:                    110
+!Xft.antialias:              0
+!Xft.rgba:                   none
+!Xft.hinting:                1
+!Xft.hintstyle:              hintsmedium
+!Xft.autohint:               0
+!Xft.lcdfilter:              lcdlight
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Xcursor settings
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Xcursor.size:	24
 Xcursor.theme:	Adwaita
-!-----------------------------------------------------------------------
-! URxvt settings
-! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
-! More info at:
-! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
-!-----------------------------------------------------------------------
-!
+
 !-----------------------------------------------------------------------
 ! General settings
 !-----------------------------------------------------------------------
 URxvt.depth:                32
-URxvt.geometry:             108x35
+URxvt.geometry:             132x40
 URxvt.transparent:          false
 URxvt.fading:               40
 URxvt.urgentOnBell:         false /* default: true */
 URxvt.visualBell:           false /* default: true */
 URxvt.loginShell:           true
-URxvt.saveLines:            50
+URxvt.saveLines:            1000
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
-!-----------------------------------------------------------------------
+
 !-----------------------------------------------------------------------
 ! Fonts
 !-----------------------------------------------------------------------
@@ -43,12 +37,13 @@ URxvt.allow_bold:           true
 ! monitor is *not* hi-dpi...
 !
 !URxvt.font:           -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
+!URxvt.font:           xft:Terminus:style:Medium:size:12
 !
 ! In most installations DejaVu is the default monospace font, but you 
 ! never know...
 !
-! If the monospace font is DèjaVu, the styles are Book, Oblique,
-! Bold and BoldOblique. If the monospace font is *not* DèjaVu, 
+! If the monospace font is DejàVu, the styles are Book, Oblique,
+! Bold and BoldOblique. If the monospace font is *not* DejàVu, 
 ! then you need to use 'fc-match monospace' first to find the actual 
 ! font in use and second 'fc-list' to find out the style names that 
 ! correspond to regular, bold and so on. A monospace font if named
@@ -57,10 +52,16 @@ URxvt.allow_bold:           true
 ! blissfully ignorant in those matters. In the words of Brinkhusrt,
 ! they "steal sheep".
 !
+!-----------------------------------------------------------------------
 URxvt*font:           xft:monospace:style=Book:pixelsize=15
 URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=15
 URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=15
 URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=15
+
+!URxvt*font:           xft:Consolas:style=Book:pixelsize=14
+!URxvt*italicFont:     xft:Consolas:style=Oblique:pixelsize=14
+!URxvt*boldFont:       xft:Consolas:style=Bold:pixelsize=14
+!URxvt*boldItalicFont: xft:Consolas:style=BoldOblique:pixelsize=14
 
 !-----------------------------------------------------------------------
 ! Fix font space
