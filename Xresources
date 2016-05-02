@@ -1,43 +1,45 @@
 !-----------------------------------------------------------------------
 ! Xft settings
 !-----------------------------------------------------------------------
-Xft.dpi:                    110
-!Xft.antialias:              0
-!Xft.rgba:                   none
-!Xft.hinting:                1
-!Xft.hintstyle:              hintsmedium
-!Xft.autohint:               0
-!Xft.lcdfilter:              lcdlight
+Xft.dpi:                    86
+Xft.antialias:              1
+Xft.rgba:                   none
+Xft.hinting:                1
+Xft.hintstyle:              hintsmedium
+Xft.autohint:               1
+Xft.lcdfilter:              lcdlight
+
+/*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Xcursor settings
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Xcursor.size:	24
-Xcursor.theme:	Adwaita
+!Xcursor.size:	24
+!Xcursor.theme:	Adwaita
 
 !-----------------------------------------------------------------------
-! General settings
+! URxvt General settings
 !-----------------------------------------------------------------------
-URxvt.depth:                32
-URxvt.geometry:             132x40
-URxvt.transparent:          false
-URxvt.fading:               40
-URxvt.urgentOnBell:         false /* default: true */
-URxvt.visualBell:           false /* default: true */
-URxvt.loginShell:           true
-URxvt.saveLines:            1000
-URxvt.internalBorder:       3
-URxvt.lineSpace:            0
+!URxvt.depth:                32
+!URxvt.geometry:             132x40
+!URxvt.transparent:          false
+!URxvt.fading:               40
+!URxvt.urgentOnBell:         false /* default: true */
+!URxvt.visualBell:           false /* default: true */
+!URxvt.loginShell:           true
+!URxvt.saveLines:            1000
+!URxvt.internalBorder:       3
+!URxvt.lineSpace:            0
 
 !-----------------------------------------------------------------------
-! Fonts
+! URxvt Fonts
 !-----------------------------------------------------------------------
-URxvt.allow_bold:           true 
+!URxvt.allow_bold:           true 
 !
 ! Terminus 12pt is an OK bitmap font if your vision is 30/20 and your
 ! monitor is *not* hi-dpi...
 !
-!URxvt.font:           -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
-!URxvt.font:           xft:Terminus:style:Medium:size:12
+!!URxvt.font:           -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
+!!URxvt.font:           xft:Terminus:style:Medium:size:12
 !
 ! In most installations DejaVu is the default monospace font, but you 
 ! never know...
@@ -53,55 +55,77 @@ URxvt.allow_bold:           true
 ! they "steal sheep".
 !
 !-----------------------------------------------------------------------
-URxvt*font:           xft:monospace:style=Book:pixelsize=15
-URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=15
-URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=15
-URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=15
+!!URxvt*font:           xft:monospace:style=Book:pixelsize=14
+!!URxvt*italicFont:     xft:monospace:style=Oblique:pixelsize=14
+!!URxvt*boldFont:       xft:monospace:style=Bold:pixelsize=14
+!!URxvt*boldItalicFont: xft:monospace:style=BoldOblique:pixelsize=14
 
-!URxvt*font:           xft:Consolas:style=Book:pixelsize=14
-!URxvt*italicFont:     xft:Consolas:style=Oblique:pixelsize=14
-!URxvt*boldFont:       xft:Consolas:style=Bold:pixelsize=14
-!URxvt*boldItalicFont: xft:Consolas:style=BoldOblique:pixelsize=14
+!!URxvt*font:           xft:Dejavu Sans Mono:style=Book:pixelsize=14
+!!URxvt*italicFont:     xft:Dejavu Sans Mono:style=Oblique:pixelsize=14
+!!URxvt*boldFont:       xft:Dejavu Sans Mono:style=Bold:pixelsize=14
+!!URxvt*boldItalicFont: xft:Dejavu Sans Mono:style=BoldOblique:pixelsize=14
+
+! This is a good example of sheep stealing...
+
+!!URxvt*font:           xft:Consolas:style=Book:pixelsize=14
+!!URxvt*italicFont:     xft:Consolas:style=Oblique:pixelsize=14
+!!URxvt*boldFont:       xft:Consolas:style=Bold:pixelsize=14
+!!URxvt*boldItalicFont: xft:Consolas:style=BoldOblique:pixelsize=14
+
+! And this is another one...
+
+!URxvt*font:           xft:Cousine:style=Regular:pixelsize=14
+!URxvt*italicFont:     xft:Cousine:style=Italic:pixelsize=14
+!URxvt*boldFont:       xft:Cousine:style=Bold:pixelsize=14
+!URxvt*boldItalicFont: xft:Cousine:style=BoldItalic:pixelsize=14
 
 !-----------------------------------------------------------------------
-! Fix font space
+! URxvt Fix font space
 !-----------------------------------------------------------------------
 URxvt*letterSpace:           -1 /* Is it really needed? */
 
 !-----------------------------------------------------------------------
-! Scrollbar
+! URxvt Scrollbar
 !-----------------------------------------------------------------------
-URxvt.scrollStyle:           rxvt
-URxvt.scrollBar:             false
+!URxvt.scrollStyle:           rxvt
+!!URxvt.scrollBar:             false
 
 !-----------------------------------------------------------------------
-! Perl extensions
+! URxvt Perl extensions
 !-----------------------------------------------------------------------
 ! URxvt.perl-ext-common:       default,matcher
 ! URxvt.matcher.button:        1
 ! URxvt.urlLauncher:           chromium
 !-----------------------------------------------------------------------
-URxvt.perl-ext-common:       default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher:   chromium
-URxvt.url-select.underline:  true
-URxvt.keysym.M-u:            perl:url-select:select_next
-URxvt.keysym.M-Escape:       perl:keyboard-select:activate
-URxvt.keysym.M-s:            perl:keyboard-select:search
+!URxvt.perl-ext-common:       default,clipboard,url-select,keyboard-select
+!URxvt.url-select.launcher:   chromium
+!URxvt.url-select.underline:  true
+!URxvt.keysym.M-u:            perl:url-select:select_next
+!URxvt.keysym.M-Escape:       perl:keyboard-select:activate
+!URxvt.keysym.M-s:            perl:keyboard-select:search
 
 !-----------------------------------------------------------------------
-! Cursor
+! URxvt Cursor
 !-----------------------------------------------------------------------
-URxvt.cursorBlink:           true
-!URxvt.cursorColor:           #657b83 /* color11 solarized set */
-URxvt.cursorUnderline:       false
+!URxvt.cursorBlink:           true
+!!URxvt.cursorColor:           #657b83 /* color11 solarized set */
+!URxvt.cursorUnderline:       false
 
 !-----------------------------------------------------------------------
-! Pointer
+! URxvt Pointer
 !-----------------------------------------------------------------------
-URxvt.pointerBlank:          true
+!URxvt.pointerBlank:          true
 
 !-----------------------------------------------------------------------
-! Color
+! URxvt Color
 !-----------------------------------------------------------------------
-URxvt.reverseVideo:          true
+!URxvt.reverseVideo:          true
 
+!-----------------------------------------------------------------------
+! XTerm Settings
+!-----------------------------------------------------------------------
+*customization: -color
+XTerm*locale: true
+XTerm*saveLines: 4096
+XTerm*reverseVideo: on
+XTerm*faceName: Liberation Mono:size=10:antialias=false
